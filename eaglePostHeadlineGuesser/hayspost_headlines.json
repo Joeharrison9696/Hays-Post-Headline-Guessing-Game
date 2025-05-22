@@ -1,0 +1,117 @@
+{
+  "siteName": "Hays Post",
+  "gameTitle": "Hays Post Headline Challenge!",
+  "lastUpdated": "2025-05-22",
+  "questions": [
+    {
+      "headlineStart": "The Hays City Commission is scheduled to vote on runway reconstruction and the...",
+      "options": [
+        "new downtown park project budget",
+        "Covenant Estates rezoning application",
+        "updated city water tariff schedule",
+        "annual Wild West Festival funding"
+      ],
+      "correctAnswer": "Covenant Estates rezoning application",
+      "storyURL": "https://hayspost.com/posts/528c93f3-03cb-4f23-a5b4-4c9f735fdc55"
+    },
+    {
+      "headlineStart": "The Ellis County Commission recently held discussions regarding the replacement of a bridge located in...",
+      "options": [
+        "the heart of Victoria",
+        "rural Ellis County",
+        "the city of Hays",
+        "Schoenchen township"
+      ],
+      "correctAnswer": "the city of Hays",
+      "storyURL": "https://hayspost.com/posts/9c8cc419-4027-49d5-bec8-cce0b0107ca4"
+    },
+    {
+      "headlineStart": "A Kansas man received a prison sentence after his violent actions resulted in significant injury to a...",
+      "options": [
+        "local law enforcement officer during a stop",
+        "5-month-old child under his care",
+        "community center volunteer at an event",
+        "endangered species at a local preserve"
+      ],
+      "correctAnswer": "5-month-old child under his care",
+      "storyURL": "https://hayspost.com/posts/a606ff79-d8a2-4e7c-9482-799b242beecb"
+    },
+    {
+      "headlineStart": "Thomas More Prep-Marian (TMP) baseball proudly claimed the regional title, securing their return to the...",
+      "options": [
+        "national collegiate championship series",
+        "3A district playoffs next month",
+        "2-1A state tournament competition",
+        "league's annual all-star game showcase"
+      ],
+      "correctAnswer": "2-1A state tournament competition",
+      "storyURL": "https://hayspost.com/posts/0e1feea6-a8dd-469b-b9f5-57c3b4935e89"
+    },
+    {
+      "headlineStart": "It's official - Hays High School's baseball team is 'STATE BOUND!' after decisively winning their own...",
+      "options": [
+        "city-wide academic decathlon",
+        "5A Regional tournament on home turf",
+        "annual state band competition title",
+        "Robotics Club state finals championship"
+      ],
+      "correctAnswer": "5A Regional tournament on home turf",
+      "storyURL": "https://hayspost.com/posts/15ff071f-94ef-4fb6-a94c-b3254a8e936f"
+    },
+    {
+      "headlineStart": "A public service announcement reminds residents that City of Hays offices will be closed on the upcoming Monday in observance of...",
+      "options": [
+        "Labor Day and community parades",
+        "Veterans Day to honor service members",
+        "Memorial Day for remembrance",
+        "Independence Day festivities"
+      ],
+      "correctAnswer": "Memorial Day for remembrance",
+      "storyURL": "https://hayspost.com/posts/c66876cc-76a3-4bcc-b3e9-fb0c2ebaed0e"
+    },
+    {
+      "headlineStart": "To support those affected by the recent Grinnell tornado, a relief fund has now been established by the...",
+      "options": [
+        "Federal Emergency Management Agency (FEMA)",
+        "Hays Area Chamber of Commerce initiative",
+        "Gove County Community Foundation",
+        "Kansas State Treasury's disaster fund"
+      ],
+      "correctAnswer": "Gove County Community Foundation",
+      "storyURL": "https://hayspost.com/posts/001ad226-c5bf-4baa-8594-5abd6ad60c82"
+    },
+    {
+      "headlineStart": "Local drivers are advised that asphalt sealing maintenance is scheduled to take place this Wednesday on...",
+      "options": [
+        "Main Street and Vine Avenue downtown",
+        "Walker and Ballpark roads near the complex",
+        "the I-70 bypass loop around the city",
+        "Commerce Parkway in the industrial district"
+      ],
+      "correctAnswer": "Walker and Ballpark roads near the complex",
+      "storyURL": "https://hayspost.com/posts/d0330b61-d174-490e-80c0-5cf6bf01e90e"
+    },
+    {
+      "headlineStart": "Community members are invited to participate, as entries have officially opened for the 'Dash for Disabilities' fundraising event, which is scheduled for...",
+      "options": [
+        "this coming Saturday morning",
+        "the last weekend of May",
+        "June 7, a Saturday",
+        "early July, alongside the fireworks"
+      ],
+      "correctAnswer": "June 7, a Saturday",
+      "storyURL": "https://hayspost.com/posts/51ddd795-e8ab-4085-a9bf-f62d7319e842"
+    },
+    {
+      "headlineStart": "Key discussions at the recent Ellis County Commission meeting included addressing the needed road repairs for Highway 40, specifically in the area of...",
+      "options": [
+        "downtown Hays near the university",
+        "the outskirts of Ellis by the river",
+        "the main street of Plainville",
+        "the community of Victoria"
+      ],
+      "correctAnswer": "the community of Victoria",
+      "storyURL": "https://hayspost.com/posts/0afd692a-c0a3-4262-b7a9-87337cdeaada"
+    }
+  ]
+}

@@ -1,0 +1,286 @@
+/* style.css */
+:root {
+    --primary-color: #007bff; /* Vibrant Blue */
+    --primary-hover-color: #0056b3;
+    --secondary-color: #6c757d; /* Grey for subtle text */
+    --background-color: #f0f2f5; /* Light grey background */
+    --container-background: #ffffff;
+    --text-color: #333;
+    --correct-color: #28a745; /* Green */
+    --incorrect-color: #dc3545; /* Red */
+    --font-family: 'Poppins', sans-serif;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    --link-color: #0056b3;
+}
+
+body {
+    font-family: var(--font-family);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    color: var(--text-color);
+    overflow-x: hidden; /* Prevent horizontal scroll during animations */
+}
+
+#game-container {
+    background-color: var(--container-background);
+    padding: 25px 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    animation: fadeInScaleUp 0.5s ease-out forwards;
+}
+
+@keyframes fadeInScaleUp {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.game-header {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+#game-title {
+    margin-top: 0;
+    font-size: 2.2em;
+    font-weight: 700;
+    color: var(--primary-color);
+    letter-spacing: -1px;
+}
+
+.subtle-text {
+    font-size: 0.9em;
+    color: var(--secondary-color);
+}
+
+#last-updated {
+    margin-bottom: 0;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Screen transitions */
+#question-area, #score-area, #start-screen {
+    animation: slideInFromRight 0.5s forwards;
+    opacity: 0; /* Start hidden for animation */
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#headline-start {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    min-height: 60px; /* Prevent layout shifts */
+    color: #2c3e50; /* Darker blue-grey */
+}
+
+#options-container button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid transparent; /* For smooth transition */
+    border-radius: var(--border-radius);
+    background-color: #f8f9fa;
+    cursor: pointer;
+    font-size: 1.05em;
+    font-weight: 600;
+    color: var(--text-color);
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+#options-container button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-color: var(--primary-color);
+}
+
+#options-container button.correct {
+    background-color: #e9f7ef; /* Lighter green */
+    border-color: var(--correct-color);
+    color: var(--correct-color);
+    animation: pulseCorrect 0.5s;
+}
+
+#options-container button.incorrect {
+    background-color: #fdecea; /* Lighter red */
+    border-color: var(--incorrect-color);
+    color: var(--incorrect-color);
+    animation: shakeIncorrect 0.5s;
+}
+
+#options-container button.disabled {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+#options-container button.reveal-correct {
+    background-color: #d4edda !important;
+    border-color: #c3e6cb !important;
+    color: #155724 !important;
+}
+
+
+@keyframes pulseCorrect {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes shakeIncorrect {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+#feedback {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 1.1em;
+    min-height: 25px; /* Prevent layout shift */
+}
+
+#story-link-container {
+    margin-top: 15px;
+    padding-top: 10px;
+    /* border-top: 1px dashed #eee; */ /* Optional separator */
+}
+
+#read-story-link {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#read-story-link:hover {
+    background-color: #e9ecef;
+    color: var(--primary-hover-color);
+    text-decoration: underline;
+}
+
+
+.action-button {
+    padding: 12px 25px;
+    background-image: linear-gradient(45deg, var(--primary-color) 0%, #0056b3 100%);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    letter-spacing: 0.5px;
+}
+
+.action-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    background-image: linear-gradient(45deg, #0056b3 0%, var(--primary-color) 100%);
+}
+
+.action-button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+#score-area h2 {
+    font-size: 1.8em;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+#final-score {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+
+.share-section {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+/* New styles for the share text display box */
+.share-text-box {
+    width: 100%;
+    min-height: 70px; /* Start with a min-height */
+    margin-bottom: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    font-size: 0.95em;
+    text-align: left; /* Align text to the left for readability */
+    white-space: pre-wrap; /* Allows text to wrap and preserves line breaks */
+    word-break: break-all; /* Break long words if necessary */
+    overflow-y: auto; /* Add scroll only if absolutely necessary, but aim to expand */
+}
+
+
+#copy-feedback {
+    margin-top: 10px;
+    color: var(--correct-color);
+    font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    #game-container {
+        padding: 20px;
+    }
+    #game-title {
+        font-size: 1.8em;
+    }
+    #headline-start {
+        font-size: 1.1em;
+    }
+    #options-container button {
+        padding: 12px;
+        font-size: 0.95em;
+    }
+    .action-button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+    .share-text-box {
+        font-size: 0.9em; /* Slightly smaller on mobile if needed */
+    }
+}
